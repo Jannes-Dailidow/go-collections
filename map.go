@@ -22,8 +22,8 @@ func MapI[T, U any, S ~[]T](s S, fn func(int, T) U) []U {
 
 func MapXI[T, U any, S ~[]T](s S, fn func(int, T) (U, error)) ([]U, error) {
 	result := make([]U, len(s))
-	for i, v := range s {
-		out, err := fn(i, v)
+	for i, t := range s {
+		out, err := fn(i, t)
 		if err != nil {
 			return nil, err
 		}
