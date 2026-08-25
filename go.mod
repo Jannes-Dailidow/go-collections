@@ -1,3 +1,3 @@
-module github.com/jannes-dailidow/go-slicest
+module github.com/jannes-dailidow/go-collections
 
-go 1.26.2
+go 1.27.0
